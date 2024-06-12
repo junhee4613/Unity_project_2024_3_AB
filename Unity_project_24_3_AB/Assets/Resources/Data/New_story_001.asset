@@ -46,10 +46,3 @@ MonoBehaviour:
       event_type: 0
       sucess_result: []
       fail_result: []
-  - option_text: "\uC120\uD0DD\uC9C03"
-    button_text: "\uC120\uD0DD\uC9C03"
-    event_check:
-      check_value: 0
-      event_type: 0
-      sucess_result: []
-      fail_result: []
