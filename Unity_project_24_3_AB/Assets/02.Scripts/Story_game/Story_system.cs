@@ -37,14 +37,14 @@ public class Story_system : MonoBehaviour
     {
         bool Check_event_type_none = false;     //기본으로 NONE일 때는 성공이라고 판단
         Story_model play_story_model = current_story_model;
-        Debug.Log(index);
 
         if (play_story_model.options[index].event_check.event_type == Story_model.Event_check.Event_type.NONE)
-        {
-            for (int i = 0; index < play_story_model.options[index].event_check.sucess_result.Length; i++)
+        {   
+            for (int i = 0; i < play_story_model.options[index].event_check.sucess_result.Length; i++)
             {
                 //FIX : 이거 나중에 수정
-                Game_system.instance.Apply_choice(current_story_model.options[index].event_check.sucess_result[i]);
+                Debug.Log(i);
+                Game_system.instance.Apply_choice(current_story_model.options[index].event_check.sucess_result[i]); 
                 Check_event_type_none = true;
             }
         }
